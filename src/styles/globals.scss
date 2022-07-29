@@ -1,0 +1,126 @@
+@import "mixins";
+@import "breakpoints";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  
+  font-family: 'Circular Std', sans-serif;
+  word-spacing: -0.25rem;
+  
+  background-color: var(--gray-10);
+}
+
+:root {
+  --brand-color-blue: #4070F4;
+  --brand-color-green: #28D67B;
+  --brand-color-black: #0A2156;
+
+  --white: #FFFFFF;
+  
+  --gray-10: #E7E9ED;
+  --gray-20: #CED2DB;
+  --gray-30: #B6BCC9;
+  --gray-40: #9EA5B8;
+  --gray-50: #858FA6;
+  --gray-60: #6D7994;
+  --gray-70: #556282;
+  --gray-80: #3C4C70;
+  --gray-90: #24365E;
+  --gray-100: #0B1F4D;
+
+
+  --support-01: #4070F4;
+  --support-02: #0BB07B;
+  --support-03: #FFAD0D;
+  --support-04: #F03D3D;
+  --support-05: #3C4C70;
+  --support-06: #D9D9D9;
+  --support-07: #828292;
+  --support-08: #3E3F44;
+  --support-09: #455CC7;
+  --support-10: #9EAAE1;
+
+  --shadow-s: 0px 2px 4px rgba(11, 31, 77, 0.08);
+  --shadow-m: 0px 4px 8px rgba(11, 31, 77, 0.1);
+  --shadow-l: 0px 8px 16px rgba(11, 31, 77, 0.12);
+  --shadow-xl: 0px 12px 24px rgba(11, 31, 77, 0.14);
+  --shadow-xxl: 0px 16px 32px rgba(11, 31, 77, 0.16);
+}
+
+.heading1 {
+  font-size: 'Circular Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 2.8rem;
+}
+
+.heading2 {
+  font-size: 'Circular Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+}
+
+.heading3 {
+  font-family: 'Circular Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.375rem;
+  line-height: 1.875rem;
+}
+
+.paragraph1 {
+  font-family: 'Circular Book';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+}
+
+.paragraph2 {
+  font-family: 'Circular Book';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 1rem;
+  line-height: 1.375rem;
+}
+
+.paragraph3 {
+  font-family: 'Circular Book';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+}
+
+.paragraph4 {
+  font-family: 'Circular Book';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.paragraph22 {
+  font-family: 'Circular Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.375rem;
+}
+
+@media (max-width: 1080px) {
+  html{
+      font-size: 93.75%;
+  }
+}
+
+@media (max-width: 768px) {
+  html{
+      font-size: 87.5%;
+  }
+}

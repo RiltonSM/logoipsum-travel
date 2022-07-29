@@ -1,0 +1,31 @@
+@import "../../../../styles/mixins";
+@import "../../../../styles/breakpoints";
+
+.container {
+    position: relative;
+
+    height: 14.5rem;
+
+    .image {
+        width: 13.5rem;
+        height: 14.5rem;
+        
+        @include sm() {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .favoriteIcon {
+        position: absolute;
+
+        top: 14px;
+        right: 14px;
+
+        z-index: 99;
+
+        cursor: pointer;
+
+        transition: color 0.5s;
+    }
+}

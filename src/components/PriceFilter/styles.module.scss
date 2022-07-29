@@ -1,0 +1,101 @@
+@import "../../styles/mixins";
+@import "../../styles/breakpoints";
+
+.container {
+    width: 28%;
+    height: min-content;
+
+    padding: 1.5rem;
+
+    background-color: var(--white);
+    box-shadow: var(--shadow-s);
+
+    @include sm {
+      width: 100%;
+    }
+
+    @include md {
+      padding: 0.8rem;
+      width: 30%
+    }
+
+    .filterHead {
+      height: 2.625rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      border-bottom: 1px solid var(--gray-10);
+
+      margin-bottom: 1.5rem;
+      
+      .clearFilter {
+        color: #3570BF;
+
+        @include md() {
+          display: none;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .clearFilterButton {
+        display: none;
+        
+        @include md() {
+          display: inline;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .subSection {
+      padding-bottom: 1.5rem;
+      margin-bottom: 1.5rem;
+
+      border-bottom: 1px solid var(--gray-10);
+    }
+
+    .subtitle {
+      margin-bottom: 0.75rem;
+    }
+
+    .gridPriceInteval {
+      display: grid;
+      grid-template-columns: auto auto;
+      column-gap: 6px;
+      row-gap: 6px;
+    }
+
+    .starsButtons {
+      @include sm() {
+        display: block;
+      }
+
+      @include md() {
+        display: block;
+      }
+
+      button {
+        margin-bottom: 6px;
+        margin-right: 6px;
+      }
+
+      button:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .gridCheckbox {
+      display: grid;
+      grid-template-columns: auto;
+      row-gap: 12px;      
+    }
+
+}

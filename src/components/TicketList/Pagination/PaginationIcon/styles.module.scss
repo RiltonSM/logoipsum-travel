@@ -1,0 +1,19 @@
+.container {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+
+  border: none;
+
+  outline: transparent;
+
+  background: transparent;
+
+  color: var(--support-09);
+
+  &:disabled {
+    color: var(--support-10);
+  }
+}

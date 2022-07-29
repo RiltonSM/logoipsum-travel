@@ -1,0 +1,26 @@
+@import "../../styles/mixins";
+@import "../../styles/breakpoints";
+
+.container {
+    @include sm() {
+        margin-bottom: 1rem;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    @include md() {
+        margin-bottom: 1.5rem;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

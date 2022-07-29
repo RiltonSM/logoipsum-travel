@@ -1,0 +1,82 @@
+@import "../../styles/mixins";
+@import "../../styles/breakpoints";
+
+.container {
+  padding: 0 3.75rem;
+  background-color: var(--brand-color-blue);
+
+  @include sm() {
+    padding: 1rem;
+    padding-top: 0;
+    padding-bottom: 2rem;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  @include md() {
+    padding: 2.5rem;
+    padding-top: 0;
+    padding-bottom: 2rem;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .earthGlobe{
+    @include sm() {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    @include md() {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+
+  .text {
+    color: var(--white);
+
+    margin: 0;
+    margin-left: 1.5rem;
+
+    @include sm() {
+      margin: 0;
+      text-align: center;
+    }
+
+    @include md() {
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+  .button{
+    height: 3.5rem;
+
+    @include sm() {
+      margin-top: 1rem;
+    }
+
+    @include md() {
+      margin-top: 1rem;
+    }
+
+    .buttonText {
+      font-size: 1rem;
+      color: var(--brand-color-blue);
+  
+      margin-right: 0.625rem;
+      
+    }
+  }
+
+}

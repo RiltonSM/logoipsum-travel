@@ -1,0 +1,32 @@
+.container {
+    width: min-content;
+    height: 2.125rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 2px;
+
+    word-spacing: -0.3rem;
+
+    padding: 4px;
+
+    outline: transparent;
+
+    border-style: solid;
+
+    background-color: var(--white);
+    border-color: var(--gray-20);
+
+    p {
+        color: var(--gray-30);
+        margin: 0;
+        margin-left: 10px;
+    }
+
+}
+
+.selected {
+    border-color: var(--support-01);
+}

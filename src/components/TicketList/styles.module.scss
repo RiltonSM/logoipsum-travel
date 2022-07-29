@@ -1,0 +1,15 @@
+@import "../../styles/mixins";
+@import "../../styles/breakpoints";
+
+.container {
+    width: calc(79% - 2*3.75rem);
+    
+    @include sm { 
+        width: 100%;
+        margin-top: 2rem;
+    }
+    
+    @include md { 
+        width: 68%;
+    }
+}

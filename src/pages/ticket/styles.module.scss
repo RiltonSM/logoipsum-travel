@@ -1,0 +1,257 @@
+@import "../../styles/mixins";
+@import "../../styles/breakpoints";
+
+.container {
+    padding: 2rem 3.75rem;
+
+    background-color: transparent;
+    
+    @include sm() {
+        padding: 2rem 1rem;
+    }
+
+    @include md() {
+        padding: 2rem 2.5rem;
+    }
+
+    .nameAndLocationContainer {
+        margin-left: 1rem;
+        margin-bottom: 2.125rem;
+
+        @include sm() {
+            width: calc(100% - (24px + 1rem));
+        }
+
+        @include md() {
+            width: calc(100% - (24px + 1rem));
+        }
+        
+        .location {
+            color: var(--support-05);
+    
+            padding-left: 4px;
+        }
+    }
+
+    .imageContainer {
+        position: relative;
+        width: 100%;
+        height: 27.125rem;
+
+        .imageButton {
+            position: absolute;
+
+            top: 8px;
+            right: 8px;
+
+            color: var(--support-01);
+            border: none;
+
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 18px;
+
+            word-spacing: -2px;
+
+            &:hover{
+                color: var(--white);
+                background-color: var(--support-01);
+                border: none;
+            }
+        }
+    }
+
+    .contentContainer{
+        margin-top: 2.3rem;
+
+        @include sm() {
+            display: block;
+        }
+
+        @include md() {
+            display: block;
+        }
+        
+        .infoContainer {
+            width: 68%;
+
+            @include sm() {
+                width: 100%;
+                margin-bottom: 1.5rem;
+            }
+            
+            @include md() {
+                width: 100%;
+                margin-bottom: 1.5rem;
+            }
+
+            .includeDescriptionContainer{
+                margin-top: 1.5rem;
+                margin-bottom: 2.125rem;
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                column-gap: 14px;
+
+                @include sm(){
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    row-gap: 0.5rem;
+                }
+
+                .includeDescriptionItem {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .includeDescriptionName{
+                    display: inline;
+                    color: var(--gray-40);
+                    
+                    margin-left: 8px;
+                    margin-bottom: 0;
+
+                    padding-top: 2px;
+                }
+            }
+
+            .subtitle{
+                color: var(--brand-color-black);
+
+                margin-bottom: 8px;
+            }
+
+            .textDescription {
+                color: var(--gray-40);
+
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .checkoutContainer {
+            width: 30%;
+            height: min-content;
+
+            padding: 1.5rem;
+
+            background-color: var(--white);
+
+            border-radius: 8px;
+
+            @include sm() {
+                width: 100%;
+            }
+
+            @include md() {
+                width: 100%;
+            }
+
+            .ticketDate {
+                padding: 8px;
+
+                .ticketDatePickerContainer{
+                    p {
+                        color: var(--brand-color-black);
+                        margin-bottom: 4px;
+                    }
+    
+    
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 2;
+
+                    margin-left: 14px;
+
+                    .datePicker {
+                        height: min-content;
+
+                        padding: 0;
+
+                        border: 0;
+                        background-color: transparent;
+
+                        color: var(--gray-40);
+
+                        &:focus{
+                            outline: transparent;
+                            box-shadow: none;
+                        }
+                    }
+                }
+
+            }
+
+            .ticketNumber {
+                padding: 8px;
+
+                .customCollapse{
+                    padding: 0;
+                    border: none;
+
+                    background-color: transparent;
+
+                    .customPanel {
+                        padding: 0;
+                        border: none;
+
+                        .ticketNumberContent {
+                            display: flex;
+                            flex-direction: column;
+                            flex-grow: 2;
+
+                            margin-left: 14px;
+
+                            p{
+                                margin-bottom: 4px;
+                            }
+
+                            span{
+                                color: var(--gray-40);
+                            }
+                        }
+
+                        .ticketQuantitySelector{
+                            color: var(--gray-40);
+
+                            .ticketQuantity{
+                                padding-left: 4px;
+                                padding-right: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .ticketQuantityReview {
+                color: var(--gray-40);
+            }
+
+            .totalLabel {
+                color: var(--brand-color-black);
+            }
+
+            .totalValue {
+                color: var(--support-01);
+
+                letter-spacing: -2px;
+            }
+
+            .buyButton{
+                width: 100%;
+
+                border: none;
+                box-shadow: none;
+
+                color: var(--white);
+                background-color: var(--support-01);
+
+                border-radius: 4px;
+            }
+
+        }
+    }
+
+
+
+
+}

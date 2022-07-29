@@ -1,0 +1,53 @@
+@import "../../styles/mixins";
+@import "../../styles/breakpoints";
+
+.container {
+  padding: 5.9375rem 3.75rem;
+
+  @include sm() {
+    padding: 3rem 1rem;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include md() {
+    padding: 3rem 1rem;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    word-spacing: -0.75rem;
+    margin-bottom: 1rem;
+
+    color: var(--brand-color-black);
+    
+    @include sm() {
+      text-align: center;
+    }
+  }
+
+  p {
+    color: var(--gray-70);
+
+    @include sm() {
+      text-align: center;
+    }
+  }
+
+  .cityCardContainer {
+    @include sm() {
+      display: block;
+    }
+
+    @include md() {
+      justify-content: space-around;
+    }
+  }
+}

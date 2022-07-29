@@ -1,0 +1,29 @@
+@import "../../../styles/mixins";
+@import "../../../styles/breakpoints";
+
+.container{
+  @include sm() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+  }
+  .listTitle {
+    color: var(--white);
+  
+    margin-bottom: 0.5rem;
+  }
+  
+  .list{
+    list-style-type: none;
+    padding: 0;
+
+    @include sm() {
+      text-align: center;
+    }
+  }
+  
+  .listItem {
+    margin-bottom: 0.5rem;
+  }
+}

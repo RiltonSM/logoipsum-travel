@@ -1,0 +1,53 @@
+@import "../../../styles/mixins";
+@import "../../../styles/breakpoints";
+
+.container {
+    height: 2.125rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 2px;
+
+    word-spacing: -0.3rem;
+
+    padding: 0;
+
+    outline: transparent;
+
+    border-style: solid;
+
+    @include sm(){
+        height: auto;
+    }
+
+    @include md(){
+        height: auto;
+    }
+}
+
+.selected {
+    background-color: var(--support-01);
+    color: var(--white);
+    border-color: var(--support-01);
+}
+
+.notSelected {
+    background-color: var(--white);
+    color: var(--gray-20);
+    border-color: var(--gray-20);
+}
+
+@keyframes buttonAnimation {
+    from {
+        background-color: var(--white);
+        color: var(--gray-20);
+        border-color: var(--gray-20);
+    }
+    to {
+        background-color: var(--support-01);
+        color: var(--white);
+        border-color: var(--support-01);
+    }
+}

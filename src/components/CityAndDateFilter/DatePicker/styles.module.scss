@@ -1,0 +1,39 @@
+@import "../../../styles/mixins";
+@import "../../../styles/breakpoints";
+
+.datePickerContainer{
+  height: 100%;
+
+  border: 1px solid var(--gray-20);
+
+  padding-left: 1rem;
+
+  @include sm(){
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .calendar{
+    padding-bottom: 4px;
+  }
+
+  .datePicker {
+    border: none; 
+    height: 100%; 
+
+    @include sm(){
+      width: calc(100% - 24px);
+    }
+
+    @include md() {
+      padding: 0;
+      padding-left: 12px;
+    }
+  }
+}
+
+.datePickerContainerFocused {
+  box-shadow: 0 0 0 2px rgb(24 144 255 / 20%);
+  z-index: 99;
+}

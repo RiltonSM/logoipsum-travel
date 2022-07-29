@@ -1,0 +1,15 @@
+@import "mixins";
+@import "breakpoints";
+
+.filterAndListContainer {
+    padding: 0 3.75rem;
+    margin-bottom: 5rem;
+
+    @include sm() {
+        padding: 0 1rem;
+    }
+
+    @include md() {
+        padding: 0 2.5rem;
+    }
+}
